@@ -1,0 +1,36 @@
+/*---------------------------------------------fonts-----------------------------------------------*/
+@font-face {
+            font-family: "BYekan";
+            src: url('BYekan.eot');
+            src: url('BYekan.eot?#iefix') format("embedded-opentype"), url('BYekan.woff') format("woff"), url(BYekan.ttf) format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "BHoma";
+            src: url('BHoma.eot');
+            src: url('BHoma.eot?#iefix') format("embedded-opentype"), url('BHoma.woff') format("woff"), url('BHoma.ttf') format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "BEsfehanBold";
+            src: url('BEsfehanBold.eot');
+            src: url('BEsfehanBold.eot?#iefix') format("embedded-opentype"), url('BEsfehanBold.woff') format("woff"), url('BEsfehanBold.ttf') format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "BNazanin";
+            src: url('BNazanin.eot');
+            src: url('BNazanin.eot?#iefix') format("embedded-opentype"), url('BNazanin.woff') format("woff"), url('BNazanin.ttf') format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Sans";
+            src: url('Sans.woff') format("woff"), url('Sans.ttf') format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+/*--------------------------------------------end fonts--------------------------------------*/

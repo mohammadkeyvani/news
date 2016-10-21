@@ -1,0 +1,190 @@
+/*---------------------------------------------fonts-----------------------------------------------*/
+@font-face {
+    font-family: "BYekan";
+    src: url('../fonts/BYekan.eot');
+    src: url('../fonts/BYekan.eot?#iefix') format("embedded-opentype"), url('../fonts/BYekan.woff') format("woff"), url(../fonts/BYekan.ttf) format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "BHoma";
+            src: url('../fonts/BHoma.eot');
+            src: url('../fonts/BHoma.eot?#iefix') format("embedded-opentype"), url('../fonts/BHoma.woff') format("woff"), url(../fonts/BHoma.ttf) format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "BEsfehanBold";
+            src: url('../fonts/BEsfehanBold.eot');
+            src: url('../fonts/BEsfehanBold.eot?#iefix') format("embedded-opentype"), url('../fonts/BEsfehanBold.woff') format("woff"), url(../fonts/BEsfehanBold.ttf) format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "BNazanin";
+            src:  url("../fonts/B Nazanin+ Regular.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Sans";
+            src: url('../fonts/Sans.woff') format("woff"), url(../fonts/Sans.ttf) format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+/*--------------------------------------------end fonts--------------------------------------*/
+
+
+
+
+
+*{
+    direction: rtl;
+}
+body{
+    background-size: cover;
+    color: #FFF;
+
+}
+/* section header top*/
+.tobbar{
+    background: url("../img/ggg.jpg") no-repeat center fixed;
+    height: 500px;
+    width: 100%;
+}
+#content{
+    margin-top: 0 !important;
+}
+/* end section top*/
+
+
+
+/* section header title*/
+.custom_nav{
+    float:right;
+    width: 100%;
+}
+.custom_nav >li{
+    float: right;
+    width: 100px;
+}
+.custom_nav >li>a{
+    font-size: 10pt;
+    font-family: Sans, sans-serif ;
+    text-align: center;
+}
+/* end section header title*/
+
+/* section feature title*/
+
+.featured_title{
+    font-family: BYekan ,sans-serif;
+}
+
+/* end section feature*/
+
+/* section _slider*/
+._slider{
+    height: 300px;
+}
+._slider img{
+    height: 300px !important;
+    width: 100%;
+}
+.title_slider{
+    background-color: rgba(0,0,0,.5);
+    top:0 !important;
+    right: 0 !important;
+    height: 40px;
+    width: 50%;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-right: 10px;
+}
+.title_slider h5{
+    font-family: Sans, sans-serif ;
+    margin-top: 0 !important;
+    text-align: right;
+}
+
+/* end section _slider*/
+
+
+/*section news of ostan*/
+.middle_content> h2{
+    font-family: BYekan,sans-serif;
+}
+.middle_content h4{
+    cursor: pointer;
+    position: absolute;
+    color: black;
+    font-family: Sans, sans-serif;
+    bottom: 0;
+    line-height: normal;
+}
+.middle_content h4:hover{
+    color: #0bb1df;
+}
+.frame_news{
+    border: 2px solid #0bb1df;
+    height: 120px;
+    width: 120px;
+    padding: 5px;
+}
+.frame_news > img{
+    height: 100%;
+    width: 100%;
+}
+.hr_frame{
+    border-top: 1px dashed #0bb1df;
+}
+.frame_title{
+    min-height: 120px;
+
+}
+.frame_body{
+    color: black;
+    font-family: BNazanin,sans-serif;
+    font-size: 12pt;
+    margin-top: 10px;
+    text-align: justify;
+}
+/* end section news ostan*/
+/* section footer*/
+.developer{
+    font-family: Sans, sans-serif;
+    font-size: 8pt;
+}
+/* edn section footer*/
+
+
+/* page body*/
+.custom_middle_{
+    padding-left:38px ;
+}
+.custom_middle{
+    padding-left: 28px !important;
+}
+.single_widget h2{
+    font-family: BYekan,sans-serif;
+}
+.frame_news_{
+    border: 2px solid #0bb1df;
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+}
+.frame_news_ > img{
+    height: 100%;
+    width: 100%;
+}
+.btn_label{
+    color:white;
+    font-size:10pt
+    font-family: BNazanin, sans-serif;
+}
+.time{
+    color: #ff6301;
+    float: left;
+}
+/* end page body*/
