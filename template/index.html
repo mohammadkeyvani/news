@@ -161,6 +161,31 @@
         </div>
       </div>
     </div>
+      <span><br></span>
+      <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-4 pull-right">
+              <div class="single_widget custom_middle">
+                  <h2>طبقه بندی استانی</h2>
+                  <select class="catgArchive ostan">
+                      {% for item in id_ostan %}
+                        <option class="status_os" id="{{ item[u'id'] }}">{{ item[u'name'] }}</option>
+                      {% end for  %}
+
+                  </select>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-4 pull-right">
+              <div class="single_widget custom_middle">
+                  <h2>طبقه بندی دسته ای</h2>
+                  <select class="catgArchive daste">
+                      {% for item in id_status %}
+                      <option class="status_cat" id="{{ item['id'] }}">{{ item[u'name'] }}</option>
+                      {% end for %}
+
+                  </select>
+              </div>
+          </div>
+      </div>
   </div>
 </section>
 <footer id="footer">
@@ -183,8 +208,40 @@
 <script src="{{ static_url('js/custom.js') }}"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $(".control_search").click(function(){
-            alert("hello ")
+        $(".ostan").change(function(){
+           var ostan =  $( ".ostan option:selected" ).attr("id");
+           var daste =  $( ".daste option:selected" ).attr("id");
+            window.location.href = "/"+ ostan + "-" + daste;
+{#            $.ajax({#}
+{#                url: "/{{ one }}-{{ two }}",#}
+{#                type: "POST",#}
+{#                data: {ostan:ostan, daste:daste},#}
+{#                success: function (response) {#}
+{#                    var data = JSON.parse(response);#}
+{##}
+{#                },#}
+{#                error: function () {#}
+{#                    alert("Error ...")#}
+{#                }#}
+{#            });#}
+
+        })
+        $(".daste").change(function(){
+           var ostan =  $( ".ostan option:selected" ).attr("id");
+           var daste =  $( ".daste option:selected" ).attr("id");
+            $.ajax({
+                url: "/",
+                type: "POST",
+                data: {ostan:ostan,daste:daste},
+                success: function (response) {
+                    var data = JSON.parse(response);
+
+                },
+                error: function () {
+                    alert("Error ...")
+                }
+            });
+
         })
     })
 </script>
